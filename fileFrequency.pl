@@ -15,7 +15,10 @@ use file commands like open, close to open and close the file.
 =cut
 
 #read from a file
-open(DATA,"<texts.txt");
+print("\n\UFile Name: ");
+$fn=<STDIN>;
+$fn="<".$fn."txt";
+open(DATA,$fn);
 while($line=<DATA>){
     print("$line");
 }

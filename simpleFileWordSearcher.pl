@@ -32,7 +32,6 @@ sub Counter{
                 $a++;
         }
         }
-       
     }
     return $hashed{$keywordinSub};
     }
